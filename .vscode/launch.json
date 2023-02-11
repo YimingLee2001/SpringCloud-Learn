@@ -39,7 +39,7 @@
             "request": "launch",
             "mainClass": "cn.itcast.user.UserApplication",
             "projectName": "user-service",
-            "vmArgs": "-Dserver.port=8083"
+            "vmArgs": "-Dserver.port=8083 -Dspring.cloud.nacos.discovery.cluster-name=SH"
         }
     ]
 }
