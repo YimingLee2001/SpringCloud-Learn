@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch EurekaApplication",
+            "request": "launch",
+            "mainClass": "cn.itcast.eureka.EurekaApplication",
+            "projectName": "eureka-server"
+        },
+        {
+            "type": "java",
+            "name": "Launch OrderApplication",
+            "request": "launch",
+            "mainClass": "cn.itcast.order.OrderApplication",
+            "projectName": "order-service"
+        },
+        {
+            "type": "java",
+            "name": "Launch UserApplication",
+            "request": "launch",
+            "mainClass": "cn.itcast.user.UserApplication",
+            "projectName": "user-service"
+        },
+        {
+            "type": "java",
+            "name": "Launch UserApplication2",
+            "request": "launch",
+            "mainClass": "cn.itcast.user.UserApplication",
+            "projectName": "user-service",
+            "vmArgs": "-Dserver.port=8082"
+        },
+        {
+            "type": "java",
+            "name": "Launch UserApplication3",
+            "request": "launch",
+            "mainClass": "cn.itcast.user.UserApplication",
+            "projectName": "user-service",
+            "vmArgs": "-Dserver.port=8083"
+        }
+    ]
+}
