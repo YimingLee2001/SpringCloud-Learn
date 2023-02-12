@@ -9,21 +9,24 @@
             "name": "Launch EurekaApplication",
             "request": "launch",
             "mainClass": "cn.itcast.eureka.EurekaApplication",
-            "projectName": "eureka-server"
+            "projectName": "eureka-server",
+            "vmArgs": "-Dfile.encoding=utf8"
         },
         {
             "type": "java",
             "name": "Launch OrderApplication",
             "request": "launch",
             "mainClass": "cn.itcast.order.OrderApplication",
-            "projectName": "order-service"
+            "projectName": "order-service",
+            "vmArgs": "-Dfile.encoding=utf8"
         },
         {
             "type": "java",
             "name": "Launch UserApplication",
             "request": "launch",
             "mainClass": "cn.itcast.user.UserApplication",
-            "projectName": "user-service"
+            "projectName": "user-service",
+            "vmArgs": "-Dfile.encoding=utf8"
         },
         {
             "type": "java",
@@ -31,7 +34,7 @@
             "request": "launch",
             "mainClass": "cn.itcast.user.UserApplication",
             "projectName": "user-service",
-            "vmArgs": "-Dserver.port=8082"
+            "vmArgs": "-Dserver.port=8082 -Dfile.encoding=utf8 -Dspring.profiles.active=test"
         },
         {
             "type": "java",
@@ -39,7 +42,7 @@
             "request": "launch",
             "mainClass": "cn.itcast.user.UserApplication",
             "projectName": "user-service",
-            "vmArgs": "-Dserver.port=8083 -Dspring.cloud.nacos.discovery.cluster-name=SH"
+            "vmArgs": "-Dserver.port=8083 -Dspring.cloud.nacos.discovery.cluster-name=SH -Dfile.encoding=utf8"
         }
     ]
 }

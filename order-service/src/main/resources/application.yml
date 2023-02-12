@@ -15,6 +15,7 @@ spring:
       discovery:
         cluster-name: HZ # 集群名称，这里HZ指杭州
         # namespace: d83898bc-802f-48ce-a6cd-a29abf3bf42f # dev 环境隔离
+        # ephemeral: false # 非临时示例
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
@@ -30,7 +31,7 @@ logging:
 #       defaultZone: http://localhost:10086/eureka
 userservice: # 要做配置的微服务名称
   ribbon:
-    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule  # 负载均衡规则，当前集群随机
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule  # 负载均衡规则，最近集群随机
 # xxxservice: # 要配置的微服务名称
 #   ribbon:
 #     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule # 随机访问
