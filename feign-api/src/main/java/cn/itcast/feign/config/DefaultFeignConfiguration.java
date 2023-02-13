@@ -1,4 +1,4 @@
-package cn.itcast.order.config;
+package cn.itcast.feign.config;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;
