@@ -4,11 +4,15 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+import cn.itcast.order.config.DefaultFeignConfiguration;
+
 @MapperScan("cn.itcast.order.mapper")
 @SpringBootApplication
+@EnableFeignClients(defaultConfiguration = DefaultFeignConfiguration.class) // 全局生效的Feign日志设置
 public class OrderApplication {
 
     public static void main(String[] args) {

@@ -35,8 +35,17 @@ userservice: # 要做配置的微服务名称
 # xxxservice: # 要配置的微服务名称
 #   ribbon:
 #     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule # 随机访问
-# ribbon:
-#   eager-load:
-#     enabled: true # 开启饥饿加载
-#     clients: # 指定饥饿加载的服务名称
-#       - userservice
+ribbon:
+  eager-load:
+    enabled: true # 开启饥饿加载
+    clients: # 指定饥饿加载的服务名称
+      - userservice
+feign:
+  # client:
+  #   config:
+  #     default:
+  #       loggerLevel: FULL # feign配置完成的日志记录
+  httpclient:
+    enabled: true # 支持HttpClient的开关
+    max-connections: 200 # 最大连接数
+    max-connections-per-route: 50 # 单个路径的最大连接数
